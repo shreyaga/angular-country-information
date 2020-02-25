@@ -1,0 +1,12 @@
+<input
+  type="text"
+  placeholder="Search"
+  class="input-box"
+  [(ngModel)]="name"
+  (ngModelChange)="onKey($event)"
+/>
+<app-country-list
+  [filterName]="name"
+  (selectedCountry)="getSelectedCountry($event)"
+  (compareMode)="getMode($event)"
+></app-country-list>

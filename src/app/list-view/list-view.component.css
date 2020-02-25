@@ -1,0 +1,14 @@
+.country-list {
+  height: 100%;
+}
+
+.input-box {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+list-view {
+  height: 100%;
+  overflow: auto;
+}

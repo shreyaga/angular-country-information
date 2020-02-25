@@ -1,0 +1,28 @@
+div {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  height: 600px;
+}
+
+.column {
+  float: left;
+  justify-content: space-between;
+  min-height: 400px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 0 5px;
+  width: 70%;
+}
+
+.column::after {
+  clear: both;
+}
+
+.country-list {
+  width: 30%;
+}

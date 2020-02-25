@@ -1,0 +1,9 @@
+input {
+  font-weight: normal;
+  line-height: 1.75;
+  white-space: nowrap;
+  width: 80%;
+  border: 2px solid #d0d0d0;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}

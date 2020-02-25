@@ -1,0 +1,10 @@
+<div class="country-list">
+  <ul>
+    <li
+      *ngFor="let country of filteredCountries"
+      (click)="getCountryInfo(country)"
+    >
+      {{country}}
+    </li>
+  </ul>
+</div>

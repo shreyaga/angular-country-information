@@ -1,0 +1,38 @@
+.country-list {
+  max-height: 560px;
+  overflow: auto;
+}
+
+li {
+  list-style-type: none;
+  display: list-item;
+  text-align: left;
+  justify-content: center;
+  padding: 3px 20px;
+  font-weight: normal;
+  line-height: 1.75;
+  color: #2f353d;
+  white-space: nowrap;
+}
+
+li:focus {
+  outline: none;
+  border: 1px solid white;
+  outline-color: #3b99fc;
+  outline-offset: -2px;
+  outline-style: auto;
+}
+li:hover {
+  color: #000000;
+  background-color: #cac8ca;
+  background-image: none;
+  filter: none;
+}
+
+ul {
+  padding-inline-start: unset;
+}
+
+li:hover {
+  cursor: pointer;
+}

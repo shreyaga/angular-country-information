@@ -1,0 +1,15 @@
+<div *ngIf="country">
+  <table *ngIf="countryInfos[0]">
+    <tr *ngFor="let header of headers;">
+      <td>{{header | titlecase}}</td>
+      <td>
+        <p *ngIf="header!=='flag'">{{countryInfos[0][header]}}</p>
+        <img *ngIf="header==='flag'" src="{{countryInfos[0][header]}}" />
+      </td>
+      <td *ngIf="countryInfos[1]">
+        <p *ngIf="header!=='flag'">{{countryInfos[1][header]}}</p>
+        <img *ngIf="header==='flag'" src="{{countryInfos[1][header]}}" />
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="row">
+  <div class="column country-list">
+    <app-list-view
+      (country)="selectedCountry($event)"
+      (mode)="getMode($event)"
+    ></app-list-view>
+  </div>
+  <div class="column">
+    <app-child-list-view
+      [country]="country"
+      [compareMode]="selectedMode"
+    ></app-child-list-view>
+  </div>
+</div>
